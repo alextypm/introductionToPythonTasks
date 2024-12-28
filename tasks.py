@@ -46,6 +46,7 @@ print(f"Trapezoid area: {area_total:.2f} square meters")
 -------------------------------------------------------------------------------
 '''
 '''
+# THIS IS THE RESULT OF QUESTION 5 #
 in1 = int(input())
 in2 = int(input())
 in3 = int(input())
@@ -55,6 +56,28 @@ in5 = int(input())
 print(f"Integer: {in1 + in2 + in3 + in4 + in5}")
 print(f"Float: {float(in1) + float(in2) + float(in3) + float(in4) + float(in5)}")
 print(f"String: {str(in1) + str(in2) + str(in3) + str(in4) + str(in5)}")
+-------------------------------------------------------------------------------
+'''
+'''
+-------------------------------------------------------------------------------
+
+# THIS IS THE RESULT OF QUESTION 6 #
+student_id = int(input())
+student_id = str(student_id)
+print(f"{student_id[0:3]}-{student_id[3:5]}-{student_id[5:9]}")
+
+-------------------------------------------------------------------------------
+'''
+'''
+-------------------------------------------------------------------------------
+
+# THIS IS THE RESULT OF QUESTION 7 #
+predef_list = [4,-27,15,33,-10]
+
+input_value = int(input())
+max_value = max(predef_list)
+result = input_value > max_value
+print(f"Greater Than Max? {result}")
 -------------------------------------------------------------------------------
 '''
 
