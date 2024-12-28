@@ -80,4 +80,14 @@ result = input_value > max_value
 print(f"Greater Than Max? {result}")
 -------------------------------------------------------------------------------
 '''
-
+'''
+-------------------------------------------------------------------------------
+# THIS IS THE RESULT OF QUESTION 9 #
+frameworks = ["Django", "Flask", "CherryPy", "Bottle", "Web2Py", "TurboGears"]
+try:
+    input_value = int(input())
+    print(frameworks[input_value])
+except IndexError:
+    print("Error")
+-------------------------------------------------------------------------------
+'''
