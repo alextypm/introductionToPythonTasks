@@ -107,3 +107,27 @@ print(f"Total price: ${total_cost:.2f}")
 -------------------------------------------------------------------------------
 
 '''
+'''
+-------------------------------------------------------------------------------
+# THIS IS THE RESULT OF QUESTION 10 #
+
+purchase = {"bananas": 1.85, "steak": 19.99, "cookies": 4.52, "celery": 2.81, "milk": 4.34}
+
+item_name = input()
+quant = int(input())
+total_cost = 0
+item = purchase[item_name]
+total_cost = quant * item
+
+if quant < 10:
+    pass
+elif 10 <= quant <= 20:
+    total_cost *= 0.95
+else:
+    total_cost *= 0.90
+
+print(f"Your total is ${total_cost:.2f}")
+
+-------------------------------------------------------------------------------
+'''
+
