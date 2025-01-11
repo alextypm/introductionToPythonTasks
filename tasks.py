@@ -62,9 +62,14 @@ print(f"String: {str(in1) + str(in2) + str(in3) + str(in4) + str(in5)}")
 -------------------------------------------------------------------------------
 
 # THIS IS THE RESULT OF QUESTION 6 #
-student_id = int(input())
-student_id = str(student_id)
-print(f"{student_id[0:3]}-{student_id[3:5]}-{student_id[5:9]}")
+
+student_id = int(input())  
+first3 = student_id // 1000000  
+remaing = student_id % 1000000  
+second2 = remaing // 10000  
+third3 = remaing % 10000  
+print(f"{str(first3)}-{str(second2)}-{str(third3)}")
+
 
 -------------------------------------------------------------------------------
 '''
@@ -107,3 +112,4 @@ print(f"Total price: ${total_cost:.2f}")
 -------------------------------------------------------------------------------
 
 '''
+
