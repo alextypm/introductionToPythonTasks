@@ -144,3 +144,36 @@ print(f"Total price: ${total_cost:.2f}")
 
 '''
 
+# Question 11
+
+### Task:
+
+# Create a solution that accepts a string input representing a grocery store item and
+# an integer input identifying the number of items purchased on a recent visit. The following dictionary`purchase`lists
+# available items as the key with the cost per item as the value.
+
+purchase = {"bananas": 1.85, "steak": 19.99, "cookies": 4.52, "celery": 2.81, "milk": 4.34}
+item_chose = input()
+item_name = purchase[item_chose]
+quantity_purchased = int(input())
+total_cost = 0
+if quantity_purchased < 10:
+    total_cost = item_name * quantity_purchased
+    print(f"{item_chose} ${total_cost:.2f}")
+elif 10 <= quantity_purchased <= 20:
+    total_cost = (item_name * quantity_purchased) * 0.95
+    print(f"{item_chose} ${total_cost:.2f}")
+elif 21 <= quantity_purchased:
+    total_cost = (item_name * quantity_purchased) * 0.90
+    print(f"{item_chose} ${total_cost:.2f}")
+
+# Additionally,
+
+# - If fewer than ten items are purchased, the price is the full cost per item.
+# - If between ten and twenty items (inclusive) are purchased, the purchase gets a 5% discount.
+# - If twenty-one or more items are purchased, the purchase gets a 10% discount.
+
+# Output the chosen item and total cost of the purchase to two decimal places.
+
+# The solution output should be in the format
+
