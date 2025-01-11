@@ -85,6 +85,37 @@ result = input_value > max_value
 print(f"Greater Than Max? {result}")
 -------------------------------------------------------------------------------
 '''
+
+''' 
+-------------------------------------------------------------------------------
+# THIS IS THE RESULT OF QUESTION 8
+
+water = int(input())
+
+water_state = ""
+optional_safety_comment = ""
+
+if water < 33:
+    water_state = "Frozen"
+    optional_safety_comment = "Watch out for ice!"
+elif 33 <= water < 80:
+    water_state = "Cold"
+elif 80 <= water < 115:
+    water_state = "Warm"
+elif 115 <= water < 211:
+    water_state = "Hot"
+elif water >= 212:
+    water_state = "Boiling"
+    if water == 212:
+        optional_safety_comment = "Caution: Hot"
+
+print(water_state)
+if optional_safety_comment:
+    print(optional_safety_comment)
+
+-------------------------------------------------------------------------------
+'''
+
 '''
 -------------------------------------------------------------------------------
 # THIS IS THE RESULT OF QUESTION 9 #
@@ -105,7 +136,7 @@ stocks = {'TSLA': 912.86 , 'BBBY': 24.84, 'AAPL': 174.26, 'SOFI': 6.92, 'KIRK': 
 num_stocks = int(input())
 total_cost = 0.0
 for i in range(num_stocks):
-    stock = input().strip()
+    stock = input()
     total_cost += stocks[stock]
 
 print(f"Total price: ${total_cost:.2f}")
