@@ -181,4 +181,11 @@ elif 21 <= quantity_purchased:
 '''
 # Question 12
 
+with open("README.md", "r") as file:
+    content = file.read()
+    word = [words.strip() for words in file.readlines()]
+    print(word)
+
+
+
 ### Task:
