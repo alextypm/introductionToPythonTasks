@@ -144,6 +144,7 @@ print(f"Total price: ${total_cost:.2f}")
 
 '''
 
+'''
 # Question 11
 
 ### Task:
@@ -177,3 +178,7 @@ elif 21 <= quantity_purchased:
 
 # The solution output should be in the format
 
+'''
+# Question 12
+
+### Task:
